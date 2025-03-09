@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thành Viên Lớp - Class 12TH2</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            padding: 20px 30px;
+            margin: 0 20px;
+            transition: 0.3s;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .navbar a:hover {
+            background: #ff9800;
+            transform: scale(1.1);
+        }
+        .content {
+            padding: 100px 50px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #ff9800;
+            color: white;
+            font-weight: bold;
+        }
+        tr:hover {
+            background: #f1f1f1;
+        }
+        .details-link {
+            color: #ff9800;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .details-link:hover {
+            text-decoration: underline;
+        }
+        .logo {
+            position: fixed;
+            top: 10px;
+            left: 20px;
+            font-size: 75px;
+            font-weight: bold;
+            display: flex;
+            gap: 5px;
+            z-index: 1100;
+        }
+        .logo span {
+            animation: colorJump 2s infinite alternate;
+        }
+        .logo span:nth-child(1) { animation-delay: 0s; }
+        .logo span:nth-child(2) { animation-delay: 0.2s; }
+        .logo span:nth-child(3) { animation-delay: 0.4s; }
+        .logo span:nth-child(4) { animation-delay: 0.6s; }
+        .logo span:nth-child(5) { animation-delay: 0.8s; }
+        @keyframes colorJump {
+            0% { color: #ff0000; }
+            25% { color: #00ff00; }
+            50% { color: #0000ff; }
+            75% { color: #ffff00; }
+            100% { color: #ff00ff; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="home.html">Trang Chủ</a>
+        <a href="activities.html">Hoạt Động</a>
+        <a href="students.html">Thành Viên Lớp</a>
+    </nav>
+    <div class="content">
+        <h1>Danh Sách Thành Viên Lớp 12TH2</h1>
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Họ Tên</th>
+                <th>Tên Tích Hợp</th>
+                <th>Ngày Sinh</th>
+                <th>Chức Vụ</th>
+                <th>Chi Tiết</th>
+            </tr>
+            <tr><td>1</td><td>Đinh Thị Hải Anh</td><td>Jennifer</td><td>06/12/2007</td><td>Thủ quỹ</td><td><a href="dinh_thị_hải_anh.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>2</td><td>Đỗ Thanh Đan Anh</td><td>Surie</td><td>08/04/2007</td><td>Thành viên</td><td><a href="dỗ_thanh_dan_anh.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>3</td><td>Trịnh Ngọc Hoàng Anh</td><td>Audrey</td><td>24/01/2007</td><td>Thành viên</td><td><a href="trịnh_ngọc_hoàng_anh.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>4</td><td>Nguyễn Khưu Gia Bảo</td><td>Drake</td><td>28/10/2007</td><td>Thành viên</td><td><a href="nguyễn_khưu_gia_bảo.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>5</td><td>Nguyễn Minh Đức</td><td>Norton</td><td>07/01/2007</td><td>Thành viên</td><td><a href="nguyễn_minh_dức.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>6</td><td>Vũ Khánh Hà</td><td>Hollie</td><td>17/05/2007</td><td>Thành viên</td><td><a href="vũ_khánh_hà.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>7</td><td>Huỳnh Quang Hưng</td><td>Gold Label</td><td>16/10/2007</td><td>Tổ trưởng tổ 4, phó bí thư</td><td><a href="huỳnh_quang_hưng.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>8</td><td>Nguyễn Nguyên Khang</td><td>Kevin</td><td>02/10/2007</td><td>Best boi</td><td><a href="nguyễn_nguyên_khang.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>9</td><td>Ngô Huỳnh Mai Khôi</td><td>Sophie</td><td>15/12/2007</td><td>Tổ trưởng tổ 3</td><td><a href="ngô_huỳnh_mai_khôi.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>10</td><td>Phạm Đức Khôi</td><td>Andrew</td><td>04/10/2007</td><td>Lớp phó kỷ luật, bí thư</td><td><a href="phạm_dức_khôi.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>11</td><td>Dương Lê Minh Khuê</td><td>Kim</td><td>23/03/2007</td><td>Lớp phó học tập</td><td><a href="dương_lê_minh_khuê.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>12</td><td>Đinh Thọ Mai Lan</td><td>Sherry</td><td>24/10/2007</td><td>Thành viên</td><td><a href="dinh_thọ_mai_lan.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>13</td><td>Lê Nguyên Long</td><td>Ryan</td><td>19/10/2007</td><td>Thành viên</td><td><a href="lê_nguyên_long.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>14</td><td>Hoàng Lê Minh</td><td>Meme</td><td>26/11/2007</td><td>Tổ trưởng tổ 1</td><td><a href="hoàng_lê_minh.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>15</td><td>Lê Đinh Trí Minh</td><td>John</td><td>08/07/2007</td><td>Thành viên</td><td><a href="lê_dình_trí_minh.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>16</td><td>Từ Ngọc Hà My</td><td>Lucy</td><td>18/06/2007</td><td>Tổ trưởng tổ 3</td><td><a href="từ_ngọc_hà_my.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>17</td><td>Lê Hoàng Nguyên</td><td>Ruby</td><td>26/05/2007</td><td>Thành viên</td><td><a href="lê_hoàng_nguyên.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>18</td><td>Võ Hoàng Nguyên</td><td>Alex</td><td>17/10/2007</td><td>Thành viên</td><td><a href="võ_hoàng_nguyên.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>19</td><td>Võ Ngọc Cát Phương</td><td>Pheobe</td><td>05/10/2007</td><td>Thành viên</td><td><a href="võ_ngọc_cát_phương.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>20</td><td>Đoàn Minh Quân</td><td>Harry1</td><td>07/12/2007</td><td>Thành viên</td><td><a href="doàn_minh_quân.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>21</td><td>Trần Hoàng Quân</td><td>Tom</td><td>28/02/2007</td><td>Thành viên</td><td><a href="trần_hoàng_quân.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>22</td><td>Huỳnh Thái Sơn</td><td>Matthew</td><td>25/10/2007</td><td>Thành viên</td><td><a href="huỳnh_thái_sơn.html" class="details-link">Xem chi tiết</a></td></tr>
+            <tr><td>23</td><td>Nguyễn Duy Thắng</td><td>Harry2</td><td>14/06/2007</td><td>Lớp phó lao động</td><td><a href="nguyễn_duy_thắng.html" class="details-link">Xem chi tiết</a></td></tr>
+        </table>
+    </div>
+</body>
+</html>
